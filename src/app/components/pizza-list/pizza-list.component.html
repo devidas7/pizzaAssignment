@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let pizza of pizzaList; let pizzaIndex = index">
+      <div class="thumbnail">
+        <img src="./assets/images/{{pizza.image}}" alt="Lights" style="width:100%">
+        <div class="caption">
+          <div class="pizza-name text-center {{pizza.type}}">{{pizza.name}}</div>
+          <span class="contents" *ngFor="let content of pizza.content; let i = index">
+            <span *ngIf="i != 0">, </span>{{content}}
+          </span>
+          <div class="price-section">
+            <span class="dis-price">
+              Rs. {{pizza.price-((pizza.discunt/100)*pizza.price)}}
+            </span>
+            <span class="act-price">Rs. {{pizza.price}}</span>
+            <span class="discount text-success">{{pizza.discunt}}%Off</span>
+            <span (click)="addPizzaToCart(pizzaIndex)" class="btn btn-danger btn-sm pull-right">ADD TO CART <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

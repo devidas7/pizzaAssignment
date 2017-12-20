@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #c1c1c1;
+}
+
+.pizza-name{
+    font-size: 18px;
+    position: relative;
+}
+.dis-price{
+    font-weight: bold;
+}
+.act-price{
+    margin-left: 20px;
+    text-decoration: line-through;
+}
+.discount{
+    margin-left: 20px;
+}
+.pizza-name::after{
+    width: 12px;
+    height: 12px;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 4px;
+    background-size: 12px 12px;
+}
+.pizza-name.non-veg::after{
+    background: url(assets/images/non-veg.png) right top no-repeat;
+}
+.pizza-name.veg::after{
+    background: url(assets/images/veg.png) right top no-repeat;
+}
+
+.cart-page .pizza-name,.cart-page .price-section{
+    padding: 0px
+}
+input{
+    max-width: 100%;
+}
+.link{
+    cursor: pointer;
+}

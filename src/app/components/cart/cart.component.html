@@ -1,0 +1,68 @@
+<div class="container cart-page">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="thumbnail clearfix">
+        <div class="caption">
+          <div class="col-md-4">
+            <label for="">Item</label>
+          </div>
+          <div class="col-md-3">
+              <label for="">Price</label>
+          </div>
+          <div class="col-md-1 text-right">
+              <label for="">Quantity</label>
+          </div>
+          <div class="col-md-2 text-right">
+            <label for="">Sub Total</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12" *ngFor="let pizza of sharedService.cartItems; let pizzaIndex = index">
+      <div class="thumbnail clearfix">
+        <div class="caption">
+          <div class="col-md-1">
+            <img src="./assets/images/{{pizza.image}}" alt="Lights" style="width:100%">
+          </div>
+          <div class="col-md-3">
+            <div class="pizza-name {{pizza.type}}">{{pizza.name}}</div>
+          </div>
+          <div class="col-md-3 price-section">
+            <span class="dis-price">
+              Rs. {{pizza.price-((pizza.discunt/100)*pizza.price)}}
+            </span>
+            <span class="act-price">Rs. {{pizza.price}}</span>
+            <span class="discount text-success">{{pizza.discunt}}%Off</span>
+          </div>
+          <div class="col-md-1 text-right">
+            <input type="number" name="" id="" [(ngModel)]="pizza.quantity" min="1">
+          </div>
+          <div class="col-md-2 text-right">
+            {{pizza.quantity * (pizza.price-((pizza.discunt/100)*pizza.price))}}
+          </div>
+          <div class="col-md-2">
+              <i (click)="removeItemFromCart(pizzaIndex)" class="fa fa-trash text-danger pull-right link" title="Remove" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="thumbnail clearfix">
+          <div class="caption">
+            <div class="col-md-1 col-md-offset-7 text-right">
+                <label for="">Total</label>
+            </div>
+            <div class="col-md-2 text-right">
+              <label for="">{{totalAmount}}</label>
+            </div>
+            <div class="col-md-offset-2">
+              <button (click)="checkoutCartItems()" class="btn btn-danger checkout pull-right">
+                Checkout
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
