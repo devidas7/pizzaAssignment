@@ -2,9 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
+## Set up the Development Environment
+
+You need to set up your development environment before you can do anything.
+Install [Node.js and npm](https://nodejs.org/en/download/) if they are not already on your machine.
+Please go to the directory if you have downloaded the project directory with `cd directoryName`
+
+Please run `npm install` command to install the packages and dependencies.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+you can run `ng serve --open` to run and open the new browser tab, it will automatically navigate to `http://localhost:4200/`.
 
 ## Code scaffolding
 

@@ -1,0 +1,61 @@
+[{
+    "id":101,
+    "name":"Veggie Supreme",
+    "type":"veg",
+    "content":["Onion", "Capsicum", "Mushroom", "Red Paprika", "Black Olives", "Sweet Corn"],
+    "size":"Medium",
+    "price":545,
+    "image":"VeggieSupreme.png",
+    "discunt": 10
+},
+{
+    "id":102,
+    "name":"Exotica",
+    "type":"veg",
+    "content":["Red Capsicum", "Green Capsicum", "Baby Corn", "Black Olives", "Jalapenos"],
+    "size":"Medium",
+    "price":555,
+    "image":"exotica.png",
+    "discunt": 10
+},
+{
+    "id":103,
+    "name":"Paneer Vegorama",
+    "type":"veg",
+    "content":["Paneer", "Onion", "Capsicum", "Black Olives", "Red Paprika"],
+    "size":"Medium",
+    "price":565,
+    "image":"Paneer Vegorama.png",
+    "discunt": 10
+},
+{
+    "id":104,
+    "name":"Chicken Supreme",
+    "type":"non-veg",
+    "content":["Chicken Tikka", "Chicken Hot & Chilly", "Chicken Meatball"],
+    "size":"Medium",
+    "price":665,
+    "image":"Chicken Supreme.png",
+    "discunt": 20
+},
+{
+    "id":105,
+    "name":"Triple Chicken Feast",
+    "type":"non-veg",
+    "content":["Chicken Keema", "Chicken Meatball", "Chicken Hot & Chilly", "Capsicum", "Onion", "Sweet Corn"],
+    "size":"Medium",
+    "price":675,
+    "image":"Triple Chicken Feast.png",
+    "discunt": 10
+},
+{
+    "id":106,
+    "name":"Chicken Italiano",
+    "type":"non-veg",
+    "content":["Chicken Pepperoni", "Chicken Sausage", "Mushroom", "Capsicum", "Black Olives"],
+    "size":"Medium",
+    "price":685,
+    "image":"Chicken Italiano.png",
+    "discunt": 20
+}
+]
