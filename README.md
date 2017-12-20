@@ -16,6 +16,10 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 you can run `ng serve --open` to run and open the new browser tab, it will automatically navigate to `http://localhost:4200/`.
 
+## Menus
+
+At default home page, there is pizza listing, Please click on add to cart button to add pizza in cart
+To access the cart, Please click on cart icon on at top right side of header or go to `/cart` page
 
 ## Build
 
